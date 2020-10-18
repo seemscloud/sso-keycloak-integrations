@@ -2,7 +2,7 @@
 
 ## Realm Management
 
-### Export Realm with All Confidentials
+### Export Realm via `standalone.sh` with all Confidentials Data
 ```bash
 /opt/jboss/keycloak/bin/standalone.sh \
   -Djboss.socket.binding.port-offset=100 \
@@ -13,7 +13,7 @@
   -Dkeycloak.migration.file=/tmp/realm.json
 ```
 
-### Import Realm with All Confidentials
+### Import Realm via `standalone.sh` with Overwrite if Realm Exist
 ```bash
 /opt/jboss/keycloak/bin/standalone.sh \
   -Djboss.socket.binding.port-offset=100 \
